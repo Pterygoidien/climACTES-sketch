@@ -1,0 +1,14 @@
+{
+  "name": "climactes",
+  "version": "1.0.0",
+  "description": "Maquettes climactes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bertrand Bouillon",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.62.0"
+  }
+}
