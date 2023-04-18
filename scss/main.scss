@@ -19,3 +19,13 @@
 
 /* 3. Importing utilities and components that control every page */
 @import "./base/fonts.scss";
+@import "./layout/display.scss";
+@import "./layout/general.scss";
+@import "./components/button.scss";
+@import "./utils/border.scss";
+
+@import "./utils/animations.scss";
+
+/* 4. For each individual page, its specific elements are separated in an other scss file (home.scss, course-item.scss, etc.) imported in the React-component */
+
+@import "./utils/debug.scss";

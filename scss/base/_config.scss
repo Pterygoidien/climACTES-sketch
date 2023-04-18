@@ -1,9 +1,9 @@
-$primary-color: #FF6060;
+$primary-color: #112771;
 $secondary-color: #F7F7F7;
-$tertiary-color: #000;
+$tertiary-color: #9ecd8cf5;
 
 /* Screen sizes */
-$screen-sm: 640px;
+$screen-sm: 680px;
 $screen-md: 768px;
 $screen-lg: 1024px;
 $screen-xl: 1300px;
@@ -12,6 +12,7 @@ $screen-2xl: 1536px;
 :root {
     --primary-color: #{$primary-color};
     --secondary-color: #{$secondary-color};
+    --tertiary-color: #{$tertiary-color};
     --screen-sm: #{$screen-sm};
     --screen-md: #{$screen-md};
     --screen-lg: #{$screen-lg};
