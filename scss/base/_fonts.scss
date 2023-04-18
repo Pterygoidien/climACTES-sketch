@@ -12,16 +12,16 @@
 
 h1,
 h2,
-h3,
-{
-font-weight: 400;
-line-height: 100%;
+h3 {
+    font-weight: 400;
+    line-height: 100%;
 
-@media screen and (max-width: $screen-sm) {
-    text-align: center;
+    @media screen and (max-width: $screen-sm) {
+        text-align: center;
 
+    }
 }
-}
+
 
 h1 {
     font-size: 2rem;
