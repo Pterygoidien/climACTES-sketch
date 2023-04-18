@@ -16,7 +16,15 @@
 .btn--outline-primary {
     background-color: inherit;
     border: 2px solid $primary-color;
+    color: $primary-color;
 }
+
+.btn--tertiary {
+    background-color: $tertiary-color;
+    border: 2px solid $tertiary-color;
+    color: white;
+}
+
 
 .btn--lg {
     padding: 12px 32px;

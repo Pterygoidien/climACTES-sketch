@@ -78,20 +78,14 @@ ul.classical > li {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-weight: 400;
   line-height: 100%;
 }
 @media screen and (max-width: 680px) {
   h1,
   h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h3 {
     text-align: center;
   }
 }
@@ -653,6 +647,13 @@ section {
 .btn--outline-primary {
   background-color: inherit;
   border: 2px solid #112771;
+  color: #112771;
+}
+
+.btn--tertiary {
+  background-color: rgba(158, 205, 140, 0.9607843137);
+  border: 2px solid rgba(158, 205, 140, 0.9607843137);
+  color: white;
 }
 
 .btn--lg {
