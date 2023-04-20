@@ -179,7 +179,7 @@
 
 
 .background-gradient-animation {
-    background: linear-gradient(-45deg, darken($primary-color, 20%), $primary-color);
+    background: linear-gradient(-45deg, $primary-color, $tertiary-color);
     background-size: 600% 600%;
     animation: gradient 35s ease infinite;
 }

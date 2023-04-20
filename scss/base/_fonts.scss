@@ -1,7 +1,7 @@
 :root {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
-    color: var(--primary-color);
+    color: #000;
 
     @media screen and (min-width: 768px) {
         font-size: 16px;
@@ -30,7 +30,8 @@ h1 {
 h2 {
     font-size: 2.1rem;
     font-weight: 5 00;
-    margin-bottom: 1.3rem;
+    margin-bottom: 3rem;
+
 
 }
 

@@ -9,9 +9,9 @@
 /* CSS Class names follow the BEM convention : Block-Element-Modifiers */
 /* Screen sizes */
 :root {
-  --primary-color: #112771;
+  --primary-color: #00AFE4;
   --secondary-color: #F7F7F7;
-  --tertiary-color: rgba(158, 205, 140, 0.9607843137);
+  --tertiary-color: #ABD03B;
   --screen-sm: 680px;
   --screen-md: 768px;
   --screen-lg: 1024px;
@@ -68,7 +68,7 @@ ul.classical > li {
 :root {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  color: var(--primary-color);
+  color: #000;
 }
 @media screen and (min-width: 768px) {
   :root {
@@ -97,7 +97,7 @@ h1 {
 h2 {
   font-size: 2.1rem;
   font-weight: 5 0;
-  margin-bottom: 1.3rem;
+  margin-bottom: 3rem;
 }
 
 h3 {
@@ -147,6 +147,10 @@ p {
 .w-max-100 {
   max-width: 100%;
   overflow-x: hidden;
+}
+
+.mid-screen {
+  width: 50vw;
 }
 
 /*margins and paddings*/
@@ -591,8 +595,8 @@ main {
 }
 
 section {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   position: relative;
 }
 
@@ -601,11 +605,11 @@ section {
 }
 
 .bg--primary-darken {
-  background-color: #07102f;
+  background-color: #007498;
 }
 
 .bg--primary-lighten {
-  background-color: #5072e5;
+  background-color: #98e7ff;
 }
 
 .bg--secondary {
@@ -621,7 +625,7 @@ section {
 }
 
 .bg--tertiary-darken {
-  background-color: rgba(113, 182, 87, 0.9607843137);
+  background-color: #7d9a25;
 }
 
 /*temporary*/
@@ -639,20 +643,20 @@ section {
 }
 
 .btn--primary {
-  background-color: #112771;
-  border: 2px solid #112771;
+  background-color: #00AFE4;
+  border: 2px solid #00AFE4;
   color: white;
 }
 
 .btn--outline-primary {
   background-color: inherit;
-  border: 2px solid #112771;
-  color: #112771;
+  border: 2px solid #00AFE4;
+  color: #00AFE4;
 }
 
 .btn--tertiary {
-  background-color: rgba(158, 205, 140, 0.9607843137);
-  border: 2px solid rgba(158, 205, 140, 0.9607843137);
+  background-color: #ABD03B;
+  border: 2px solid #ABD03B;
   color: white;
 }
 
@@ -1065,7 +1069,7 @@ section {
   }
 }
 .background-gradient-animation {
-  background: linear-gradient(-45deg, #040818, #112771);
+  background: linear-gradient(-45deg, #00AFE4, #ABD03B);
   background-size: 600% 600%;
   animation: gradient 35s ease infinite;
 }
