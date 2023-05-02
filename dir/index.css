@@ -1,3 +1,19 @@
+/* Screen sizes */
+:root {
+  --primary-color: #6CB14F;
+  --secondary-color: #F7F7F7;
+  --tertiary-color: #114B5F;
+  --screen-sm: 320px;
+  --screen-md: 480px;
+  --screen-lg: 768px;
+  --screen-xl: 992px;
+  --screen-2xl: 1140px;
+  --screen-3xl: 1320px;
+  --screen-4xl: 1538px;
+  --screen-5xl: 1920px;
+  --screen-6xl: 2400px;
+}
+
 .showcase {
   position: relative;
   background: url("./images/banner-3.png");
@@ -45,11 +61,31 @@
   }
 }
 
-#inscription > div:first-child {
+#inscription {
+  margin-bottom: 6rem;
+}
+#inscription .inscription__flexbox > div:first-child {
   flex: 2 1 600px;
 }
-#inscription > div:last-child {
+#inscription .inscription__flexbox > div:last-child {
   flex: 1 1 300px;
+}
+#inscription::after {
+  content: "";
+  position: absolute;
+  bottom: -80%;
+  left: -2%;
+  right: 0;
+  width: 200%;
+  height: 400px;
+  background: #6cb14f;
+  transform: rotate(3.5deg);
+  z-index: -5;
+}
+
+#about-us {
+  background: #6CB14F;
+  color: white;
 }
 
 /*# sourceMappingURL=index.css.map */

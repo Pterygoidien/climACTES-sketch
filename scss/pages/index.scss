@@ -1,3 +1,6 @@
+@import "../base/config";
+@import "../utils/functions";
+
 .showcase {
     position: relative;
     background: url("./images/banner-3.png");
@@ -46,11 +49,35 @@
 }
 
 #inscription {
-    &>div:first-child {
-        flex: 2 1 600px;
+    .inscription__flexbox {
+        &>div:first-child {
+            flex: 2 1 600px;
+        }
+
+        &>div:last-child {
+            flex: 1 1 300px;
+        }
+
     }
 
-    &>div:last-child {
-        flex: 1 1 300px;
+    margin-bottom:6rem;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -80%;
+        left: -2%;
+        right: 0;
+        width: 200%;
+        height: 400px;
+        background: lighten($primary-color, 0);
+        transform: rotate(3.5deg);
+        z-index: -5;
     }
+}
+
+#about-us {
+    background: $primary-color;
+    color: set-font-color($primary-color, #000);
+
 }
