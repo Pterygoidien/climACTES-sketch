@@ -9,14 +9,18 @@
 /* CSS Class names follow the BEM convention : Block-Element-Modifiers */
 /* Screen sizes */
 :root {
-  --primary-color: #00AFE4;
+  --primary-color: #ABD03B;
   --secondary-color: #F7F7F7;
-  --tertiary-color: #ABD03B;
-  --screen-sm: 680px;
-  --screen-md: 768px;
-  --screen-lg: 1024px;
-  --screen-xl: 1300px;
-  --screen-2xl: 1536px;
+  --tertiary-color: #00AFE4;
+  --screen-sm: 320px;
+  --screen-md: 480px;
+  --screen-lg: 768px;
+  --screen-xl: 992px;
+  --screen-2xl: 1140px;
+  --screen-3xl: 1320px;
+  --screen-4xl: 1538px;
+  --screen-5xl: 1920px;
+  --screen-6xl: 2400px;
 }
 
 /* 1. Resetting CSS */
@@ -65,56 +69,39 @@ ul.classical > li {
 
 /* 2. Setting universal root-elements */
 /* 3. Importing utilities and components that control every page */
-:root {
+html {
+  font-size: calc(15px + 0.20625vw);
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
   color: #000;
-}
-@media screen and (min-width: 768px) {
-  :root {
-    font-size: 16px;
-  }
 }
 
 h1,
 h2,
 h3 {
-  font-weight: 400;
-  line-height: 100%;
-}
-@media screen and (max-width: 680px) {
-  h1,
-  h2,
-  h3 {
-    text-align: center;
-  }
+  font-weight: 600;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 2.1rem;
-  font-weight: 5 0;
-  margin-bottom: 3rem;
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 
-h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1.3rem;
-}
-
-h4 {
-  font-size: 1.2rem;
-}
-
-h5 {
-  font-size: 1.25rem;
-}
-
-h6 {
+p {
   font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.text--white {
+  color: #fff;
+}
+
+.text--black {
+  color: #000;
 }
 
 .text-center {
@@ -127,6 +114,10 @@ h6 {
 
 .text--white {
   color: #fff;
+}
+
+.text--primary {
+  color: var(--primary-color);
 }
 
 p {
@@ -557,7 +548,7 @@ p {
   display: none;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 320px) {
   .md-invisible {
     display: none;
   }
@@ -570,16 +561,17 @@ p {
   display: none;
 }
 
-body,
-html {
-  width: 100%;
+html,
+body {
+  width: 100vw;
   height: 100vh;
+  min-height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
 
 .logo {
-  width: 75px;
+  width: 68px;
 }
 
 main {
@@ -587,11 +579,18 @@ main {
   flex-direction: column;
 }
 
-.container {
-  max-width: var(--screen-2xl);
+.container, .container-xl {
   width: 100%;
   margin: 0 auto;
-  padding: 1.2rem;
+}
+
+.container, .container-xl {
+  max-width: var(--screen-5xl);
+  padding: 0 1rem;
+}
+
+.container-xl {
+  max-width: var(--screen-6xl);
 }
 
 section {
@@ -605,11 +604,11 @@ section {
 }
 
 .bg--primary-darken {
-  background-color: #007498;
+  background-color: #7d9a25;
 }
 
 .bg--primary-lighten {
-  background-color: #98e7ff;
+  background-color: #e9f3cb;
 }
 
 .bg--secondary {
@@ -625,7 +624,7 @@ section {
 }
 
 .bg--tertiary-darken {
-  background-color: #7d9a25;
+  background-color: #007498;
 }
 
 /*temporary*/
@@ -643,20 +642,20 @@ section {
 }
 
 .btn--primary {
-  background-color: #00AFE4;
-  border: 2px solid #00AFE4;
+  background-color: #ABD03B;
+  border: 2px solid #ABD03B;
   color: white;
 }
 
 .btn--outline-primary {
   background-color: inherit;
-  border: 2px solid #00AFE4;
-  color: #00AFE4;
+  border: 2px solid #ABD03B;
+  color: #ABD03B;
 }
 
 .btn--tertiary {
-  background-color: #ABD03B;
-  border: 2px solid #ABD03B;
+  background-color: #00AFE4;
+  border: 2px solid #00AFE4;
   color: white;
 }
 
@@ -1069,7 +1068,7 @@ section {
   }
 }
 .background-gradient-animation {
-  background: linear-gradient(-45deg, #00AFE4, #ABD03B);
+  background: linear-gradient(-45deg, #ABD03B, #00AFE4);
   background-size: 600% 600%;
   animation: gradient 35s ease infinite;
 }
@@ -1085,6 +1084,16 @@ section {
     background-position: 0% 50%;
   }
 }
+header {
+  padding: 0.5rem;
+  position: sticky;
+  top: 0;
+  border-bottom: #e2e8f0 1px solid;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  z-index: 5;
+  background: #fff;
+}
+
 /* 4. For each individual page, its specific elements are separated in an other scss file (home.scss, course-item.scss, etc.) imported in the React-component */
 .debug-bd {
   border: 1px solid red;

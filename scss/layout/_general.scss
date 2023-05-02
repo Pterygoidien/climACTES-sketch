@@ -1,13 +1,14 @@
-body,
-html {
-    width: 100%;
+html,
+body {
+    width: 100vw;
     height: 100vh;
+    min-height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
 
 .logo {
-    width: 75px;
+    width: 68px;
 }
 
 main {
@@ -15,12 +16,23 @@ main {
     flex-direction: column;
 }
 
-.container {
-    max-width: var(--screen-2xl);
+%container {
     width: 100%;
     margin: 0 auto;
-    padding: 1.2rem;
 }
+
+.container {
+    @extend %container;
+    max-width: var(--screen-5xl);
+    padding: 0 1rem;
+
+}
+
+.container-xl {
+    @extend .container;
+    max-width: var(--screen-6xl);
+}
+
 
 section {
     padding-top: 0.5rem;

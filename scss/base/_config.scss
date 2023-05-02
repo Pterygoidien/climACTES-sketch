@@ -1,13 +1,17 @@
-$primary-color: #00AFE4;
+$primary-color: #ABD03B;
 $secondary-color: #F7F7F7;
-$tertiary-color: #ABD03B;
+$tertiary-color: #00AFE4;
 
 /* Screen sizes */
-$screen-sm: 680px;
-$screen-md: 768px;
-$screen-lg: 1024px;
-$screen-xl: 1300px;
-$screen-2xl: 1536px;
+$screen-sm: 320px;
+$screen-md: 480px;
+$screen-lg: 768px;
+$screen-xl: 992px;
+$screen-2xl: 1140px;
+$screen-3xl: 1320px;
+$screen-4xl: 1538px;
+$screen-5xl: 1920px;
+$screen-6xl: 2400px;
 
 :root {
     --primary-color: #{$primary-color};
@@ -18,4 +22,9 @@ $screen-2xl: 1536px;
     --screen-lg: #{$screen-lg};
     --screen-xl: #{$screen-xl};
     --screen-2xl: #{$screen-2xl};
+    --screen-3xl: #{$screen-3xl};
+    --screen-4xl: #{$screen-4xl};
+    --screen-5xl: #{$screen-5xl};
+    --screen-6xl: #{$screen-6xl};
+
 }
