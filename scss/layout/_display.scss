@@ -231,6 +231,12 @@ $value in $rem {
     }
 }
 
+@media screen and (max-width: $screen-xl) {
+    .xl\:invisible {
+        display: none;
+    }
+}
+
 
 .overflow-y-hidden {
     overflow-y: hidden;

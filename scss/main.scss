@@ -17,6 +17,8 @@
 @import "./base/reset.scss";
 /* 2. Setting universal root-elements */
 
+@import "./utils/functions.scss";
+
 /* 3. Importing utilities and components that control every page */
 @import "./base/typography.scss";
 @import "./layout/display.scss";
@@ -25,6 +27,7 @@
 @import "./utils/border.scss";
 
 @import "./utils/animations.scss";
+
 
 
 @import "./layout/header";

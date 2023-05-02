@@ -82,11 +82,11 @@ h3 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.1rem;
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -1233,6 +1233,11 @@ p {
     display: none;
   }
 }
+@media screen and (max-width: 992px) {
+  .xl\:invisible {
+    display: none;
+  }
+}
 .overflow-y-hidden {
   overflow-y: hidden;
 }
@@ -1317,7 +1322,6 @@ section {
   font-weight: 600;
   text-align: center;
   border-radius: 3px;
-  cursor: pointer;
   text-transform: uppercase;
 }
 
