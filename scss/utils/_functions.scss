@@ -1,0 +1,9 @@
+@function set-font-color($background-color, $default-font-color) {
+    $font-color: $default-font-color;
+
+    @if lightness($background-color)>50% {
+        $font-color: invert($default-font-color);
+    }
+
+    @return $font-color;
+}
