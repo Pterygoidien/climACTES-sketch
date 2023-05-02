@@ -23,7 +23,7 @@ main {
 
 .container {
     @extend %container;
-    max-width: var(--screen-5xl);
+    max-width: var(--screen-4xl);
     padding: 0 1rem;
 
 }

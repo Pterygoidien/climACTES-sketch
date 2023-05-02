@@ -15,10 +15,10 @@
         <div class="container-xl flex justify-between items-center">
             <img src="./images/Logo-80px-1.jpg" class="logo" alt="Logo">
             <nav>
-                <ul class="flex">
+                <ul class="flex items-center">
                     <li><a href="#">Accueil</a></li>
                     <li><a href="#">Qui sommes-nous</a></li>
-                    <li><a href="#">Contactez-nous</a></li>
+                    <li><button class="btn--primary py-1 px-4">Inscris-toi </button></li>
                 </ul>
             </nav>
         </div>
@@ -30,16 +30,19 @@
 
         <section class="py-4">
 
-            <div class="container flex flex-responsive  justify-between gap-10">
+            <div class="container flex justify-between gap-10 " id="inscription">
 
 
-                <div class="flex flex-col justify-around ">
+                <div class="flex flex-col justify-around">
                     <h2 class="text--primary text-center px-1 mb-3">Les inscriptions à ClimACTES 2023 sont ouvertes !
                     </h2>
                     <div class="inscription flex flex-col">
                         <h3>Vous pouvez déjà vous inscrire, ou consulter notre programme en ligne !</h3>
-                        <button class="btn btn--lg btn--primary">Je m'inscris</button>
-                        <button class="btn btn--lg btn--primary">Programme 2023</button>
+                        <div class="buttons flex flex-responsive justify-between">
+                            <button class="btn btn--lg btn--primary">Je m'inscris</button>
+                            <button class="btn btn--lg  btn--tertiary">Programme 2023</button>
+                        </div>
+
                     </div>
 
                     <div class="flex flex-col">
@@ -48,12 +51,8 @@
                         <button class="btn btn--lg btn--tertiary">Un aperçu de ClimACTES 2022</button>
                     </div>
                 </div>
-                <div class="md-invisible flex">
-                    <div class="inscription-image">
-                        <div class="block">
+                <div class="md:invisible flex">
 
-                        </div>
-                    </div>
                     <img src="./images/inscription2-comp-768x579-1-610x460.jpg" alt=""
                         class="mx-auto rounded-2xl img-full">
                 </div>

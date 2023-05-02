@@ -20,56 +20,7 @@
     margin: 0 auto;
 }
 
-$spaceamounts: (
-    0,
-    1,
-    2,
-    3,
-    4,
-    5
-);
-
-@each $space in $spaceamounts {
-    .m-#{$space} {
-        margin: #{$space}rem;
-    }
-
-    .my-#{$space} {
-        margin: #{$space}rem 0;
-    }
-
-    .mx-#{$space} {
-        margin: 0 #{$space}rem;
-    }
-
-    .p-#{$space} {
-        padding: #{$space}rem;
-    }
-
-    .py-#{$space} {
-        padding: #{$space}rem 0;
-    }
-
-    .px-#{$space} {
-        padding: 0 #{$space}rem;
-    }
-
-    .mb-#{$space} {
-        margin-bottom: #{$space}rem;
-    }
-}
-
-/* grid display */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 1rem;
-}
-
-/* flex display*/
-@import "./flex.scss";
-
-$spacegaps: (
+$rem: (
     0:0rem,
     1:0.25rem,
     2:0.5rem,
@@ -87,8 +38,83 @@ $spacegaps: (
 
 );
 
+
+@each $key,
+$value in $rem {
+    .m-#{$key} {
+        margin: #{$value};
+    }
+
+    .mt-#{$key} {
+        margin-top: #{$value};
+    }
+
+    .mb-#{$key} {
+        margin-bottom: #{$value};
+    }
+
+    .ml-#{$key} {
+        margin-left: #{$value};
+    }
+
+    .mr-#{$key} {
+        margin-right: #{$value};
+    }
+
+    .mx-#{$key} {
+        margin-left: #{$value};
+        margin-right: #{$value};
+    }
+
+    .my-#{$key} {
+        margin-top: #{$value};
+        margin-bottom: #{$value};
+    }
+
+    .p-#{$key} {
+        padding: #{$value};
+    }
+
+    .pt-#{$key} {
+        padding-top: #{$value};
+    }
+
+    .pb-#{$key} {
+        padding-bottom: #{$value};
+    }
+
+    .pl-#{$key} {
+        padding-left: #{$value};
+    }
+
+    .pr-#{$key} {
+        padding-right: #{$value};
+    }
+
+    .px-#{$key} {
+        padding-left: #{$value};
+        padding-right: #{$value};
+    }
+
+    .py-#{$key} {
+        padding-top: #{$value};
+        padding-bottom: #{$value};
+    }
+}
+
+/* grid display */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
+}
+
+/* flex display*/
+@import "./flex.scss";
+
+
 @each $n,
-$value in $spacegaps {
+$value in $rem {
     .gap-#{$n} {
         gap: #{$value};
     }
@@ -199,11 +225,12 @@ $value in $spacegaps {
     display: none;
 }
 
-@media screen and (max-width: $screen-sm) {
-    .md-invisible {
+@media screen and (max-width: $screen-md) {
+    .md\:invisible {
         display: none;
     }
 }
+
 
 .overflow-y-hidden {
     overflow-y: hidden;
