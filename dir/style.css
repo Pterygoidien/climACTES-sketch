@@ -9,9 +9,9 @@
 /* CSS Class names follow the BEM convention : Block-Element-Modifiers */
 /* Screen sizes */
 :root {
-  --primary-color: #ABD03B;
+  --primary-color: #6CB14F;
   --secondary-color: #F7F7F7;
-  --tertiary-color: #00AFE4;
+  --tertiary-color: #114B5F;
   --screen-sm: 320px;
   --screen-md: 480px;
   --screen-lg: 768px;
@@ -1284,11 +1284,11 @@ section {
 }
 
 .bg--primary-darken {
-  background-color: #7d9a25;
+  background-color: #4c7c37;
 }
 
 .bg--primary-lighten {
-  background-color: #e9f3cb;
+  background-color: #d3e8cb;
 }
 
 .bg--secondary {
@@ -1304,7 +1304,7 @@ section {
 }
 
 .bg--tertiary-darken {
-  background-color: #007498;
+  background-color: #05181e;
 }
 
 /*temporary*/
@@ -1322,20 +1322,20 @@ section {
 }
 
 .btn--primary {
-  background-color: #ABD03B;
-  border: 2px solid #ABD03B;
+  background-color: #6CB14F;
+  border: 2px solid #6CB14F;
   color: white;
 }
 
 .btn--outline-primary {
   background-color: inherit;
-  border: 2px solid #ABD03B;
-  color: #ABD03B;
+  border: 2px solid #6CB14F;
+  color: #6CB14F;
 }
 
 .btn--tertiary {
-  background-color: #00AFE4;
-  border: 2px solid #00AFE4;
+  background-color: #114B5F;
+  border: 2px solid #114B5F;
   color: white;
 }
 
@@ -1748,7 +1748,7 @@ section {
   }
 }
 .background-gradient-animation {
-  background: linear-gradient(-45deg, #ABD03B, #00AFE4);
+  background: linear-gradient(-45deg, #6CB14F, #114B5F);
   background-size: 600% 600%;
   animation: gradient 35s ease infinite;
 }

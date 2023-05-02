@@ -1,9 +1,10 @@
 .showcase {
   position: relative;
   background: url("./images/banner-3.png");
-  background-size: cover;
+  background-size: 120%;
   background-repeat: no-repeat;
   background-position: top center;
+  background-attachment: fixed;
   width: 100%;
   aspect-ratio: 21/9;
   max-height: 80vh;
@@ -11,7 +12,9 @@
 @media screen and (max-width: 850px) {
   .showcase {
     background-position: 60% 10%;
-    max-height: 1000vh;
+    background-size: cover;
+    background-attachment: scroll;
+    max-height: 100vh;
     aspect-ratio: 1/1;
   }
 }
@@ -19,7 +22,7 @@
   .showcase {
     max-height: 60vh;
     background-size: 100%;
-    background-position: 50% 30%;
+    background-position: 50% 100%;
   }
 }
 
