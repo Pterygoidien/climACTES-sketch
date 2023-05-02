@@ -48,7 +48,9 @@
 
 }
 
-#inscription {
+section#inscription {
+    position: relative;
+
     .inscription__flexbox {
         &>div:first-child {
             flex: 2 1 600px;
@@ -60,20 +62,25 @@
 
     }
 
-    margin-bottom:6rem;
+    @media screen and (min-width: $screen-md) {
+        padding-bottom: 12rem;
 
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: -80%;
-        left: -2%;
-        right: 0;
-        width: 200%;
-        height: 400px;
-        background: lighten($primary-color, 0);
-        transform: rotate(3.5deg);
-        z-index: -5;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -20%;
+            left: -5%;
+            width: 250%;
+            height: 40%;
+            background: lighten($primary-color, 0);
+            transform: rotate(2.8deg) translateY(30%);
+            z-index: -5;
+            margin-top: 5rem;
+
+
+        }
     }
+
 }
 
 #about-us {

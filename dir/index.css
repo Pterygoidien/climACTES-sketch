@@ -61,26 +61,31 @@
   }
 }
 
-#inscription {
-  margin-bottom: 6rem;
+section#inscription {
+  position: relative;
 }
-#inscription .inscription__flexbox > div:first-child {
+section#inscription .inscription__flexbox > div:first-child {
   flex: 2 1 600px;
 }
-#inscription .inscription__flexbox > div:last-child {
+section#inscription .inscription__flexbox > div:last-child {
   flex: 1 1 300px;
 }
-#inscription::after {
-  content: "";
-  position: absolute;
-  bottom: -80%;
-  left: -2%;
-  right: 0;
-  width: 200%;
-  height: 400px;
-  background: #6cb14f;
-  transform: rotate(3.5deg);
-  z-index: -5;
+@media screen and (min-width: 480px) {
+  section#inscription {
+    padding-bottom: 12rem;
+  }
+  section#inscription::after {
+    content: "";
+    position: absolute;
+    bottom: -20%;
+    left: -5%;
+    width: 250%;
+    height: 40%;
+    background: #6cb14f;
+    transform: rotate(2.8deg) translateY(30%);
+    z-index: -5;
+    margin-top: 5rem;
+  }
 }
 
 #about-us {
