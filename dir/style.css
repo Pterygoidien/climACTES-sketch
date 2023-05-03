@@ -67,6 +67,12 @@ ul.classical > li {
   padding: 0.1rem;
 }
 
+figure,
+video {
+  width: 100%;
+  max-width: 100%;
+}
+
 /* 2. Setting universal root-elements */
 /* 3. Importing utilities and components that control every page */
 html {
@@ -1272,6 +1278,7 @@ main {
 .container, .container-xl {
   max-width: var(--screen-4xl);
   padding: 0 1rem;
+  overflow-x: hidden;
 }
 
 .container-xl {
@@ -1579,6 +1586,22 @@ section {
 
 .rounded-full {
   border-radius: 100%;
+}
+
+.separator {
+  height: 380px;
+  max-height: 10vh;
+  width: 100vw;
+  background: linear-gradient(2deg, #6CB14F 50%, rgb(255, 255, 255) 50.8%);
+}
+@media screen and (max-width: 500px) {
+  .separator {
+    display: none;
+  }
+}
+
+.reverse {
+  background: linear-gradient(2deg, rgb(255, 255, 255) 50%, #6CB14F 50.6%);
 }
 
 .background-animation {

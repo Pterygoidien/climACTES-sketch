@@ -25,6 +25,7 @@ main {
     @extend %container;
     max-width: var(--screen-4xl);
     padding: 0 1rem;
+    overflow-x: hidden;
 
 }
 
